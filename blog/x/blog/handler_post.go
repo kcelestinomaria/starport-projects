@@ -13,3 +13,8 @@ func handleMsgCreatePost(ctx sdk.Context, k keeper.Keeper, msg *types.MsgCreateP
 
 		return &sdk.Result{Events: ctx.EventManager().ABCIEvents()}, nil
 }
+
+/* 
+"k" stands for Keeper, an abstraction used by the
+SDK that writes data to the store
+*/

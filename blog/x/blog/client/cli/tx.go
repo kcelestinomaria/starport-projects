@@ -50,7 +50,7 @@ func CmdCreatePost() *cobra.Command {
 								return err
 						}
 
-						msg := types.NewMsgCreatePost(clientCtx.GetFromAddress().String(), string(argsTitle), string(argsBody)
+						msg := types.NewMsgCreatePost(clientCtx.GetFromAddress().String(), string(argsTitle), string(argsBody))
 						if err := msg.ValidateBasic(); err != nil {
 								return err
 						}
